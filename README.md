@@ -1,2 +1,2 @@
-# npmCDN
-npm CDN
+# npm-cdn
+npm-cdn

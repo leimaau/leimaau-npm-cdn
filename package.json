@@ -1,0 +1,26 @@
+{
+  "name": "npm-cdn",
+  "version": "1.0.0",
+  "description": "my cdn npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+	"db",
+	"js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leimaau/npm-cdn.git"
+  },
+  "keywords": [
+    "cdn"
+  ],
+  "author": "leimaau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leimaau/npm-cdn/issues"
+  },
+  "homepage": "https://github.com/leimaau/npm-cdn#readme"
+}
