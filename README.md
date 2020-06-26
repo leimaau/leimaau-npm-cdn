@@ -1,2 +1,2 @@
 # npm-cdn
-npm-cdn
+my npm-cdn
