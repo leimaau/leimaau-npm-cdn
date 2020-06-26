@@ -1,2 +1,2 @@
-# npm-cdn
-my npm-cdn
+# leimaau-npm-cdn
+my npm CDN
