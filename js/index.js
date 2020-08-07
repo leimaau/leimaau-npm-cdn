@@ -139,8 +139,8 @@ function queryChar(inputValue, queryType, selVal){
 	
 	var isShow = res_triungkox.length + res_gw.length + res_jw.length + res_jj.length + res.length + res_bw.length + res_zb_sz.length + res_zb_b_wj.length + res_zb_wj.length;
 	if (isShow != 0) {
-		//if(dataList.length != 0) $('#nav-tab').removeClass('d-none'); // 顯示tab
-		//if(dataList_bw.length != 0) $('#nav-tab-bw').removeClass('d-none'); // 顯示tab
+		//if(res.length != 0) $('#nav-tab').removeClass('d-none'); // 顯示tab
+		//if(res_bw.length != 0) $('#nav-tab-bw').removeClass('d-none'); // 顯示tab
 		let tradRes = tradData.filter(item => item['simp'] == inputValue), tradLink = [];
 		if (tradRes.length != 0) {
 			for (let v of tradRes[0].trad) {
@@ -195,8 +195,8 @@ function queryPhrase(inputValue, queryType, selVal){
 	
 	var isShow = res_proverb.length + res.length + res_bw.length;
 	if (isShow != 0) {
-		if(dataList.length != 0) $('#nav-tab').removeClass('d-none'); // 顯示tab
-		if(dataList_bw.length != 0) $('#nav-tab-bw').removeClass('d-none'); // 顯示tab
+		if(res.length != 0) $('#nav-tab').removeClass('d-none'); // 顯示tab
+		if(res_bw.length != 0) $('#nav-tab-bw').removeClass('d-none'); // 顯示tab
 	} else {
 		displayAlert('未查詢到結果!', outputAlert, 'alert-primary');
 	}
@@ -290,8 +290,7 @@ function showPie(res, inputValue, pieDiv, pieTitle, queryType) {
 function showWordCloud(res, inputValue, wordCloudDiv, wordCloudTitle, queryType, colName) {
 	//if (res.length == 0) return false;
 	if (queryType == 'expl' || queryType == 'phrase_expl') { // 詞例和解釋反查時不顯示詞雲圖
-		document.getElementById('nav-tab').style.display = 'none'; // 隱藏tab
-		document.getElementById('nav-tab-bw').style.display = 'none';
+		$('#nav-tab,#nav-tab-bw').addClass('d-none');  // 隱藏tab
 		return false;
 	}
 	var text = [];
