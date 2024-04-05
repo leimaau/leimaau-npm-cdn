@@ -1,6 +1,6 @@
 {
   "name": "leimaau-npm-cdn",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "description": "my npm cdn ",
   "main": "index.js",
   "scripts": {
